@@ -1,2 +1,2 @@
 # div-ting
-Diverse som ikkje e relatert til skule
+Småting som ej tulla med
