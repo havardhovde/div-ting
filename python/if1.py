@@ -1,12 +1,12 @@
 land = input("Land i skandinavia: ")
 
-if land == "Norge":
+if land.casefold() == "norge":
     print("Oslo")
 
-elif land == "Sverige":
+elif land.casefold() == "sverige":
     print("Stockholm")
 
-elif land == "Dannmark":
+elif land.casefold() == "dannmark":
     print("København")
 
 else:

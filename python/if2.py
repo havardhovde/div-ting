@@ -13,12 +13,12 @@
 
 voksen = input("Er du voksen= (ja/nei)")
 
-if voksen == "nei":
+if voksen.casefold() == "nei":
     print("Bli voksen!")
 
-if voksen == "ja":
+if voksen.casefold() == "ja":
     gravid = input("Er du gravid= (ja/nei)")
-    if gravid == "nei":
+    if gravid.casefold() == "nei":
         print("Velkommen ombord!")
-    if gravid == "ja":
+    if gravid.casefold() == "ja":
         print("Du får desverre ikke lov")

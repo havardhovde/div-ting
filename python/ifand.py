@@ -1,7 +1,8 @@
 voksen = input("Er du voksen= (ja/nei)")
 gravid = input("Er du gravid= (ja/nei)")
 
-if voksen == "ja" and gravid =="nei":
+if voksen.casefold() == "ja" and gravid.casefold() == "nei":
     print("velkommen ombord!")
-else:
+    
+else :
     print("du får dessverre ikke lov")
