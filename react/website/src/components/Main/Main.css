@@ -1,0 +1,8 @@
+.main {
+    background-color: tomato;
+    text-align: center;
+    height: calc(100vh - 120px);
+    color: white;
+    padding-top: 20px;
+    font-size: 24px;
+}
