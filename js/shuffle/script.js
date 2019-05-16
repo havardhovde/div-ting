@@ -22,7 +22,6 @@ for(let i = 0; i <= 11; i++) {
     if(i <= 5) {
         document.querySelector(`#img${i}`).innerHTML = `<img src="${img1[0].src}"></img>`;
         img2.push(img1.splice(0,1)[0]);
-        
     } 
     shuffle(img2);
     if(i > 5) {

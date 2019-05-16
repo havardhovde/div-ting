@@ -29,3 +29,15 @@ img {
     width: 175px;
     height: 175px;
 }
+
+#img0 {
+    order: 4;
+}
+
+#img1 {
+    order: 5;
+}
+
+#img2 {
+    order: 6;
+}
