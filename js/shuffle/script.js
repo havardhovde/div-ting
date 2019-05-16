@@ -9,8 +9,8 @@ let img1 = [
 
 let img2 = [];
 
-function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
+function shuffle(array) {   
+    for (let i = array.length - 1   ; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
@@ -28,4 +28,17 @@ for(let i = 0; i <= 11; i++) {
         document.querySelector(`#img${i}`).innerHTML = `<img src="${img2[0].src}"></img>`;
         img1.push(img2.splice(0,1)[0]);
     }
-}
+}   
+
+// let shuffled = false
+// for(let i = 0; i <= 11; i++) {
+//     if(i < 5 && !shuffled) {
+//         shuffle(img1)
+//         shuffled = true;
+//     }
+//     document.querySelector(`#img${i}`).innerHTML = `<img src="${img1[(i % 5)].src}"></img>`;
+// }
+
+// console.log(img1)
+
+// array.sort(() => Math.random() - 0.5)

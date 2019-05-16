@@ -30,14 +30,14 @@ img {
     height: 175px;
 }
 
-#img0 {
-    order: 4;
+#img6 {
+    order: 1;
 }
 
-#img1 {
-    order: 5;
+#img4 {
+    order: 7;
 }
 
-#img2 {
-    order: 6;
-}
+#img5 {
+    order: 8;
+} 
