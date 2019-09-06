@@ -1,0 +1,112 @@
+$side-width: 250px; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+aside {
+    position: fixed;
+    height: 100vh;
+    width: $side-width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        display: block;
+        color: gray;
+        text-decoration: none;
+        text-align: center;
+    }
+    a.active {
+        font-weight: bold;
+    }
+}
+
+main {
+    margin-left: calc(#{$side-width} + 25px);
+    section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+$heights:(
+    1: 100px,
+    2: 200px,
+    3: 150px,
+    4: 80px,
+    5: 300px,
+    6: 120px
+    );
+
+$widths:(
+    1: 100px,
+    2: 200px,
+    3: 150px,
+    4: 80px,
+    5: 300px,
+    6: 120px
+);
+
+$bg-color:(
+    1: rgba(0, 0, 0, .4),
+    2: rgba(0, 0, 0, .6),
+    3: rgba(0, 0, 0, .9),
+    4: rgba(0, 0, 0, .8),
+    5: rgba(0, 0, 0, .3),
+    6: rgba(0, 0, 0, .2),
+);
+
+$left-margins:(
+    1: 0px,
+    2: -50px,
+    3: -75px,
+    4: -100px,
+    5: -80px,
+    6: -90px 
+);
+
+$top-margins:(
+    1: 0px,
+    2: -50px,
+    3: -75px,
+    4: -100px,
+    5: -80px,
+    6: -90px 
+);
+
+@each $name, $value in $heights {
+    .item#{$name}{
+        height: $value;
+    }
+}
+
+@each $name, $value in $widths {
+    .item#{$name}{
+        width: $value;
+    }
+}
+
+@each $name, $value in $bg-color{
+    .item#{$name}{
+        background-color: $value;
+    }
+}
+
+@each $name, $value in $left-margins{
+    .item#{$name}{
+        margin-left: $value;
+    }
+}
+
+@each $name, $value in $top-margins{
+    .item#{$name}{
+        margin-top: $value;
+    }
+}

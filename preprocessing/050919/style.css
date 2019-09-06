@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-item {
+  background-color: white;
+  border: 1px solid gray;
+}
+header .logo {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+header .menu {
+  margin-right: 20px;
+}
+
+main {
+  display: flex;
+}
+main .item {
+  height: 100vh;
+  width: 450px;
+  flex-grow: 1;
+  background-color: orange;
+  background-position: center top;
+  background-size: cover;
+  font-weight: 300;
+  color: white;
+  padding: 70vh 60px 0 60px;
+}
+main .item a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+main .item1 {
+  background-image: url("./images/img1.jpg");
+}
+main .item2 {
+  background-image: url("./images/img2.jpg");
+}
+main .item3 {
+  background-image: url("./images/img1.jpg");
+}
+
+@media (max-width: 900px) {
+  main {
+    width: 300px;
+  }
+  main .item {
+    width: 100vw;
+    height: 912px;
+  }
+}
+section {
+  height: 10vh;
+}
+
+footer {
+  height: 10vh;
+}
+
+/*# sourceMappingURL=style.css.map */

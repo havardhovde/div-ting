@@ -1,0 +1,15 @@
+header {
+  background-color: cyan;
+}
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 44px;
+}
+header h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .subsection {
+  background-color: #eee;
+}
+
+/*# sourceMappingURL=style.css.map */
