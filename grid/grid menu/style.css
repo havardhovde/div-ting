@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: gray;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: black;
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    nav {
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+}
