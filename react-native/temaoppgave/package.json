@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "expo": "^32.0.0",
+    "prop-types": "^15.7.2",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-flip-component": "^1.0.6",
+    "react-native-flip-view": "^1.0.5"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
