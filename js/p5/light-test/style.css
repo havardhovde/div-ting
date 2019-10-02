@@ -2,16 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
+    cursor: none;
 }
 
 body {
-    /* background-color: black; */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-section {
-    display: inline;
+main {
+    background-color: black;
+    text-align: center;
+}
+.title {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.textbox1 {
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.textbox1:hover {
+    opacity: 100;
+    /* cursor: none; */
+}
+
+.boxTitle {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.boxText {
+    font-size: 1.2rem;
+    font-weight: 100;
 }

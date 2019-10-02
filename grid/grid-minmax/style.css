@@ -1,0 +1,27 @@
+:root {
+    background-color: orange;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    gap: 2px;
+    grid-template-columns: 100px 200px 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-columns: repeat(auto-fit, mimnax(200px, 1fr));
+}
+
+div {
+    background-color: white;
+}
+
+.center {
+    height: 100%;
+    display:grid;
+    place-items: center;
+}
