@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    cursor: none;
+    /* cursor: none; */
 }
 
 body {
@@ -34,6 +34,7 @@ main {
     padding: 50px;
     opacity: 0;
     transition: 1s;
+    cursor: none;
 }
 
 .textbox1:hover {
