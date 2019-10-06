@@ -1,0 +1,9 @@
+.godteri {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.godteri img {
+    max-width: 200px;
+}

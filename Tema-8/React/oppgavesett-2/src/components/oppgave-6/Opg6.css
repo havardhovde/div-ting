@@ -1,0 +1,13 @@
+.products {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.products img {
+    max-width: 200px;
+}
+
+button {
+    font-size: 12px;
+}

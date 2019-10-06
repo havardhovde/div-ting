@@ -1,0 +1,15 @@
+body {
+    height: 200vh;
+}
+
+#box {
+    position: fixed;
+    left: 35%;
+    width: 600px;
+    height: 200px;
+    background-color: red;
+}
+
+#text {
+    font-size: 32px;
+}

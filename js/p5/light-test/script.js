@@ -20,18 +20,10 @@ function draw() {
 
     for (let x = 0; x <= width; x = x + 60 ) {
         for (let y = 0; y <= height; y = 60 + y) {
-            if (x > 120 && x < 180) {
-                tint(196, 35, 35);
-                // fill(107);
-                noStroke();
-                square((x - windowWidth/2)-5, (y - windowHeight/2)-5, 50)
-                // image(img, x-windowWidth/2, y - windowHeight/2, 40, 40)
-            } else {
-                fill(107);
-                noStroke();
-                square((x - windowWidth/2)-5, (y - windowHeight/2)-5, 50)
-                image(img, x-windowWidth/2, y - windowHeight/2, 40, 40)
-            }
+            fill(107);
+            noStroke();
+            square((x - windowWidth/2)-5, (y - windowHeight/2)-5, 50)
+            image(img, x-windowWidth/2, y - windowHeight/2, 40, 40)
         }
     }
 }

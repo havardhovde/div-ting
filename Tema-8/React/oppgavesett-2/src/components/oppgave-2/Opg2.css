@@ -1,0 +1,11 @@
+.diagram {
+    display: flex; 
+    width: 400px;
+    height: 300px;  
+    align-items: flex-end;         
+}
+.diagram div {
+    background-color: orange;
+    margin: 10px;
+    flex: 1;   
+}
