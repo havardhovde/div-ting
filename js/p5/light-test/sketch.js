@@ -11,7 +11,8 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight, WEBGL);
+    var canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+    canvas.parent("sketch-pos");
 }
 
 function draw() {
