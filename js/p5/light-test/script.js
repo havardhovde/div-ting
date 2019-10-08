@@ -1,43 +1,32 @@
-let img;
-let lightR = 255;
-let lightG = 255;
-let lightB = 155;
-let lightStrength = 0;
+let count1 = 0;
 
-function preload() {
-    img = loadImage("images/pig-bg.png")
-}
+let firstBox = document.getElementById("firstBox")
+let textBox1 = document.getElementById("textbox1");
+let textBox2 = document.getElementById("textbox2");
+let textBox3 = document.getElementById("textbox3");
 
-function setup() {
-    createCanvas(windowWidth, windowHeight, WEBGL);
-}
+window.addEventListener("click", hideStart);
+textBox1.addEventListener("mouseleave", showNextBox1);
+textBox2.addEventListener("mouseleave", showNextBox2);
 
-function draw() {
-    background(0);
-    let lightX = mouseX - width / 2;
-    let lightY = mouseY - height / 2;
-    pointLight(lightR, lightG, lightB, lightX, lightY, lightStrength);
-
-    for (let x = 0; x <= width; x = x + 60 ) {
-        for (let y = 0; y <= height; y = 60 + y) {
-            fill(107);
-            noStroke();
-            square((x - windowWidth/2)-5, (y - windowHeight/2)-5, 50)
-            image(img, x-windowWidth/2, y - windowHeight/2, 40, 40)
-        }
-    }
-}
-
-function mousePressed() {
-    if (lightStrength !== 0) {
-        lightStrength = 0;
-        cursor();
+function hideStart() {
+    if (count1 % 2 == 0) {
+        firstBox.style.opacity = 0;
+        firstBox.style.cursor = "none";
+        textBox1.style.display = "block";
     } else {
-        lightStrength = 30;
-        noCursor();
+        firstBox.style.display = "block";
+        textBox1.style.display = "none";
+        textBox2.style.display = "none";
+        textBox3.style.display = "none";
     }
+    count1++;
 }
 
-function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+function showNextBox1() {
+    textBox2.style.display = "block";
+}
+
+function showNextBox2() {
+    textBox3.style.display = "block";
 }

@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    /* cursor: none; */
 }
 
 body {
@@ -14,6 +13,7 @@ main {
     background-color: black;
     text-align: center;
 }
+
 .title {
     position: absolute;
     left: 50%;
@@ -24,30 +24,62 @@ main {
     font-weight: 100;
 }
 
-.textbox1 {
+.textbox {
     transform: scale(0.3);
-    position: absolute;
-    left: 70%;
-    top: 25%;
-    border-radius: 30px;
     font-size: 2rem;
     background-color: transparent;
     color: transparent;
     padding: 50px;
     opacity: 0;
-    transition: 1s;
+    transition: 0.2s;
+    border-radius: 20px;
     box-shadow: 0 0 0 rgba(255, 255, 255, 0.082);
     animation: pulse 2s infinite;
     z-index: 2;
     opacity: 1;
 }
 
-.textbox1:hover {
-    /* opacity: 100; */
+.textbox:hover {
     transform: scale(1);
     animation: none;
     background-color: black;
     color: white;
+}
+
+.firstBox {
+    position: absolute;
+    margin-left: 41%;
+    margin-right: 70%;
+    margin-top: 20%;
+    color: white;
+    background-color: black;
+    border: 1px solid gray;
+    font-size: 2rem;
+    z-index: 2;
+    padding: 30px 50px 30px 50px;
+    transition: 0.2s;
+}
+
+#textbox1 {
+    display: none;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10%;
+}
+
+#textbox2 {
+    display: none;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+#textbox3 {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-11%);
+    margin-top: 30%;
 }
 
 .boxTitle {
