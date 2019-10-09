@@ -31,5 +31,5 @@ function showNextBox1() {
 }
 
 function showNextBox2() {
-    textBox3.style.display = "block";
+    textBox3.style.display = "grid";
 }
