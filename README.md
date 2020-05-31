@@ -1,2 +1,2 @@
 # div-ting
-Småting som ej tulla med
+Diverse greier
